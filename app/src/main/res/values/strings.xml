@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">UpsoftApp</string>
+
+
+    <string name="tag_key_translation_z">translation_z</string>
+    <string name="title_bamboy_freedom_list">非约束列表</string>
+    <string name="title_bamboy_blur">高斯模糊</string>
+    <string name="title_bamboy_toast">自定义Toast</string>
+    <string name="title_bamboy_anim_click">点击动画</string>
+
+
+    <string name="max_select_num">可选择图片数量</string>
+    <string name="select_picture">选择图片</string>
+    <string name="select_mode">选择模式</string>
+    <string name="single">单选</string>
+    <string name="multiple">多选</string>
+    <string name="show_camera">显示拍照选项</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="enable_preview">打开预览选项</string>
+    <string name="enable_crop">打开剪切选项</string>
+    <string name="enable">打开</string>
+    <string name="disable">关闭</string>
+    <string name="color_picker">颜色选择器</string>
+    <string name="cpv_custom">自定义</string>
+    <string name="cpv_presets">预设</string>
+    <string name="cpv_select">选择</string>
+</resources>

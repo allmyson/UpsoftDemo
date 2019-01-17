@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.upsoft.demo.framework.activity.TestActivity">
+    <com.upsoft.demo.framework.ui.BamButton
+        android:id="@+id/bb_native"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:background="#00f6ff"
+        android:text="NativeSDK-Example"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+    <com.upsoft.demo.framework.ui.BamButton
+        android:id="@+id/bb_js"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:background="#00ff7e"
+        android:text="JSSDK-Example"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+    <com.upsoft.demo.framework.ui.BamButton
+        android:id="@+id/bb_weex"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ffcc00"
+        android:text="WeexSDK-Example"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+</LinearLayout>

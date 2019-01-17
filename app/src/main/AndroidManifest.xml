@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.upsoft.demo"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 录音权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 获取手机录音机使用权限，听写、识别、语义理解需要用到此权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!-- 调用摄像头的权限 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- 文件系统权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- SD卡写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!-- NFC扫描 -->
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- 调用摄像头的权限 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- 调用系统发送短信 -->
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <!-- 蓝牙权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <!-- unavailable in API 23 -->
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+
+    <!-- 这个权限用于进行网络定位 -->
+    <!-- 这个权限用于访问GPS定位 -->
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <!-- 用于读取手机当前的状态 -->
+    <!-- &lt;!&ndash; 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据&ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission> -->
+    <!-- &lt;!&ndash; 访问网络，网络定位需要上网&ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <!-- 电源管理权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+        android:name=".business.base.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.upsoft.demo.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+        <service
+            android:name=".framework.UploadService"
+            android:enabled="true"/>
+
+        <activity
+            android:name=".framework.activity.LogActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".framework.activity.WelcomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+
+                <!-- <data -->
+                <!-- android:host="www.upsoft.com.cn" -->
+                <!-- android:path="/welcome" -->
+                <!-- android:scheme="http"/> -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".framework.activity.TestActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".framework.activity.NativeTestActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".framework.activity.ShowPicDetailActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.yongchun.library.view.ImageSelectorActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.yongchun.library.view.ImagePreviewActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.yongchun.library.view.ImageCropActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.upsoft.qrlibrary.CaptureActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.upsoft.qrlibrary.ShowActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".framework.activity.NFCScanActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".framework.activity.CompressActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".framework.activity.SelectImageActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".framework.activity.AudioActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".business.activity.CommonWebviewActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".framework.activity.PermissionActivity">
+        </activity>
+        <activity android:name=".framework.activity.LoginActivity">
+        </activity>
+        <activity android:name=".framework.activity.MainActivity">
+        </activity>
+        <activity android:name=".framework.activity.AboutActivity">
+        </activity>
+        <activity android:name=".framework.activity.NetworkActivity"/>
+        <activity android:name=".framework.activity.UserInfoActivity"/>
+        <activity android:name=".framework.activity.UpdatePsdActivity">
+        </activity>
+        <activity android:name=".framework.activity.WeexTestActivity">
+        </activity>
+        <activity android:name=".framework.weex.activity.WeexPageActivity">
+        </activity>
+        <activity android:name=".business.activity.TActivity">
+        </activity>
+        <activity android:name=".framework.activity.DownloadActivity">
+        </activity>
+        <activity android:name=".framework.activity.IndividualizationActivity">
+        </activity>
+        <activity android:name=".framework.activity.SetTextSizeActivity">
+        </activity>
+    </application>
+
+</manifest>

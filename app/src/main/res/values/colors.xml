@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_color">#2196f3</color>
+    <color name="main_gray">#999999</color>
+    <color name="gray_line">#d7d7d7</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="sdk_grey_filler">#F4F5F9</color>
+</resources>

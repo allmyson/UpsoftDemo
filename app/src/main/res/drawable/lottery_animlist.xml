@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+                android:oneshot="false">
+
+    <item
+        android:drawable="@mipmap/icon_voice_running_one"
+        android:duration="300"/>
+    <item
+        android:drawable="@mipmap/icon_voice_running_two"
+        android:duration="300"/>
+    <item
+        android:drawable="@mipmap/icon_voice_running_three"
+        android:duration="300"/>
+    <item
+        android:drawable="@mipmap/icon_voice_running_four"
+        android:duration="300"/>
+    <item
+        android:drawable="@mipmap/icon_voice_running_five"
+        android:duration="300"/>
+    <item
+        android:drawable="@mipmap/icon_voice_running_six"
+        android:duration="300"/>
+    <item
+        android:drawable="@mipmap/icon_voice_running_seven"
+        android:duration="300"/>
+
+</animation-list>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_net"
+    style="@style/my_ll_style"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/iv_"
+        android:layout_width="@dimen/my_icon_width"
+        android:layout_height="@dimen/my_icon_height"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_wlpz"/>
+    <TextView
+        android:id="@+id/tv_"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:maxLines="1"
+        android:text="网络配置"
+        android:textColor="#666666"
+        android:textSize="14sp"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_right"/>
+</LinearLayout>
